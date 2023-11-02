@@ -26,7 +26,7 @@
 
         {% for nav_element in nav_elements %}
         {% if nav_element.position == page_number %}
-        <span class="nav-element visited">{{ nav_element.text }}</span>
+        <span class="nav-element visited" id="i{{ nav_element.position }}">{{ nav_element.text }}</span>
         {% endif %}
         {% if nav_element.position == -1 %}
         <a href="{% url 'website:index' %}" class="nav-element">
