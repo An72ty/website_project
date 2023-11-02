@@ -258,7 +258,6 @@ a.link#center {
     float: left;
 }
 
-.interesting-place a.link,
 .interesting-place .bigger-text,
 .interesting-place .description.smaller {
     clear: right;
