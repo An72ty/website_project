@@ -1,0 +1,91 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+
+{% block title %}Галерея{% endblock title %}
+
+{% block content %}
+
+<h1>Мiй улюблений Самар</h1>
+<p class="description">Самар (Новомосковськ до 2023 року) – засноване у 1672 році, але перші поселення на його території
+    датовані ще 3 тис. до н.е. Населений пункт приваблює туристів безліччю пам’яток, найцікавішою з яких справедливо
+    вважається Троїцький храм.</p>
+
+
+<div id="gallery">
+    <div class="row">
+        <img src="{% static 'website/images/park-smaller.png' %}" class="first center">
+        <img src="{% static 'website/images/church-smaller.png' %}" class="second">
+    </div>
+    <div class="row">
+        <img src="{% static 'website/images/museum-smaller.png' %}" class="first center">
+        <img src="{% static 'website/images/landscape-smaller.png' %}" class="second">
+    </div>
+    <div class="row">
+        <img src="{% static 'website/images/bridge-smaller.png' %}" class="first">
+        <img src="{% static 'website/images/plane-smaller.png' %}" class="second center">
+    </div>
+</div>
+
+
+<h2>Видатні Самарці</h2>
+<div class="bio">
+    <img src="{% static 'website/images/mikola_petrovich.png' %}" class="photo">
+    <p class="bigger-text">Мико́ла Петро́вич Глу́щенко</p>
+    <p class="date">4 (17) вересня 1901, — 31 жовтня 1977 або 1 жовтня 1977, Київ</p>
+    <p class="description smaller">Український радянський художник (автор портретів і краєвидів), радянський розвідник
+        (псевдо «Художник», «Ярема»). Чоловік художниці Марії Глущенко, батькохудожника Олександра Глущенка.</p>
+</div>
+<div class="bio">
+    <img src="{% static 'website/images/maksym_bilyi.png' %}" class="photo">
+    <p class="bigger-text">Білий Максим Іванович</p>
+    <p class="date">нар. 27 квітня 1989 пом. 14 вересня 2013</p>
+    <p class="description smaller">Український футболіст, півзахисник. Відомий виступами за команди ФК «Харків»,
+        «Металург» (Запоріжжя) та «Зоря». Протягом 2005–2011 років викликався до лав юніорських та молодіжних збірних
+        України. У складі молодіжної збірної України брав участь у Чемпіонаті Європи з футболу серед молоді 2011 року.
+    </p>
+</div>
+<div class="bio">
+    <img src="{% static 'website/images/oksana_sklyarenko.png' %}" class="photo">
+    <p class="bigger-text">Скляренко Оксана Сергіївна</p>
+    <p class="date">нар. 4 травня 1981,</p>
+    <p class="description smaller">Українська легкоатлетка, бігунка на марафонських дистанціях. У 2008 році показала
+        свій кращий результат у марафонському бігу з часом 2:36:14, вигравши бронзову медаль Туринського марафону.</p>
+</div>
+
+
+<h2>Цікаві Місця</h2>
+<div class="interesting-place left">
+    <img src="{% static 'website/images/plane.png' %}">
+    <div class="center">
+        <p class="bigger-text">Пам'ятник Льотчикам 295 Авіадивізії</p>
+        <p class="description smaller">Пам’ятник воїнам-визволителям. 195-та Гвардійська стрілецька дивізія брала участь
+            у звільненні міста Новомосковська.</p>
+    </div>
+</div>
+<a href="{% url 'website:interesting_places' %}" class="link" id="center">Показати всі місця &xrarr;</a>
+
+
+<div class="news">
+    <h2 id="news">Новини Самар</h2>
+    <div class="new" id="first">
+        <img src="{% static 'website/images/new_0.png' %}">
+        <p class="bigger-text">Компенсація роботодавцям за облаштування робочих місць для осіб з інвалідністю</p>
+        <p class="date">опубліковано 17 жовтня 2023 року о 08:18</p>
+        <p class="description smaller">Через війну, що триває в нашій країні, на жаль, чимало осіб працездатного віку
+            отримали інвалідність, а проте мають можливість та бажають працювати. Для того щоб підтримати роботодавців,
+            які готові не тільки формаль...</p>
+        <a href="#" class="link">Читати новини &xrarr;</a>
+    </div>
+    <div class="new">
+        <img src="{% static 'website/images/new_1.png' %}">
+        <p class="bigger-text">Дніпропетровщина долучається до формування додаткових бригад Нацгвардії, Нацполіції та
+            Держприкордонслужби</p>
+        <p class="date">опубліковано 04 лютого 2023 року о 08:07</p>
+        <p class="description smaller">Основу нових бригад складають військові, які мають великий фронтовий досвід.
+            Добровольці – підсилять підрозділи. Але спершу вони пройдуть інтенсивну підготовку. Отримають сучасне
+            озброєння і техніку...</p>
+        <a href="{% url 'website:news' %}" class="link">Читати новини &xrarr;</a>
+    </div>
+</div>
+{% endblock content %}

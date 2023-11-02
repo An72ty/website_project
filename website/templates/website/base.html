@@ -1,0 +1,63 @@
+{% load static %}
+
+
+<!DOCTYPE html>
+<html lang="ua">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://fonts.googleapis.com/css?family=Nunito Sans' rel='stylesheet'>
+    <link rel="stylesheet" href="{% static 'website/css/styles.css' %}" type="text/css">
+    <link rel="shortcut icon" href="{% static 'website/images/favicon.png' %}" type="image/png">
+    <title>{% block title %}Nastia's website project{% endblock title %}</title>
+</head>
+
+<body>
+    <div id="nav">
+        <!-- <a href="{% url 'website:index' %}" class="nav-element text">Галерея</a>
+        <a href="#" class="nav-element text">Цiкавi мiсця</a>
+        <a href="{% url 'website:index' %}" class="nav-element">
+            <img src="{% static 'website/images/novomoskovsk.png' %}" alt="Новомосковськ">
+        </a>
+        <a href="{% url 'website:history' %}" class="nav-element text">Iсторiя Мiста</a>
+        <a href="{% url 'website:news' %}" class="nav-element text">Новини</a> -->
+
+        {% for nav_element in nav_elements %}
+        {% if nav_element.position == page_number %}
+        <span class="nav-element visited">{{ nav_element.text }}</span>
+        {% endif %}
+        {% if nav_element.position == -1 %}
+        <a href="{% url 'website:index' %}" class="nav-element">
+            <img src="{% static 'website/images/novomoskovsk.png' %}" alt="Новомосковськ">
+        </a>
+        {% endif %}
+        {% if nav_element.position != page_number and nav_element.position != -1 %}
+        <a href="{% url nav_element.url %}" class="nav-element text">{{ nav_element.text }}</a>
+        {% endif %}
+        {% endfor %}
+    </div>
+    <div id="content">
+        {% block content %}
+        {% endblock content %}
+    </div>
+    <div id="footer">
+        <ul>
+            <li><a href="{% url 'website:index' %}" class="footer-link">Галерея</a></li>
+            <li><a href="{% url 'website:interesting_places' %}" class="footer-link">Цiкавi мiсця</a></li>
+            <li><a href="{% url 'website:history' %}" class="footer-link">Iсторiя Мiста</a></li>
+            <li><a href="{% url 'website:news' %}" class="footer-link">Новини</a></li>
+        </ul>
+        <div class="align-left">
+            <p>Проект реалiзовано у рамках дипломної роботи.</p>
+            <p>Використання матерiалiв сайту i копiювання iнформацїї без письмового дозволу заборонено.</p>
+            <div class="author">
+                <p>&copy;2024 Мiй улюблений Самар. Всi права захищенi.</p>
+                <p>Зробила Анастасiя Ланцова.</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

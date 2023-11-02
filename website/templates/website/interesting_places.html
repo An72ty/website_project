@@ -1,0 +1,72 @@
+{% extends 'website/base.html' %}
+{% load static %}
+
+
+{% block title %}Цікаві місця{% endblock title %}
+
+
+{% block content %}
+
+<h2>Цікаві місця</h2>
+<div class="interesting-place left">
+    <img src="{% static 'website/images/plane.png' %}">
+    <div class="center">
+        <p class="bigger-text">Пам'ятник Льотчикам 295 Авіадивізії</p>
+        <p class="description smaller">Пам’ятник воїнам-визволителям. 195-та Гвардійська стрілецька дивізія брала участь
+            у звільненні міста Новомосковська.</p>
+        <a href="#" class="link">Показати на карті &xrarr;</a>
+    </div>
+</div>
+<div class="interesting-place right">
+    <div class="center">
+        <p class="bigger-text">Троїцький Собор</p>
+        <p class="description smaller">Історична пам'ятка в Новомосковську, запорозькому місті Самар (Новоселиці),
+            центрі Самарської паланки. Споруджений у 1772—1781 народним майстром Якимом Погребняком із дерева без
+            жодного залізного цвяха.</p>
+        <a href="#" class="link">Показати на карті &xrarr;</a>
+    </div>
+    <img src="{% static 'website/images/church.png' %}">
+</div>
+<div class="interesting-place left">
+    <img src="{% static 'website/images/bridge.png' %}">
+    <div class="center">
+        <p class="bigger-text">Горбатий Міст</p>
+        <p class="description smaller">Красива пам'ятка Новомосковська. Поміст зроблений з дерева, а каркас з металу і
+            має вигнуту форму, від нього так і віє романтикою. Розташований у парку відпочинку. З мосту відкриваються
+            гарні краєвиди на місто і річку Самара</p>
+        <a href="#" class="link">Показати на карті &xrarr;</a>
+    </div>
+</div>
+<div class="interesting-place right">
+    <div class="center">
+        <p class="bigger-text">Історико-краєзнавчий Музей ім.П.Калнишевського</p>
+        <p class="description smaller">Відображення важливих подій історії Дніпропетровщини можна побачити в
+            Новомосковському історико-краєзнавчому музеї ім. Петра Калнишевського. Музей був відкритий в 1963 році.
+            Раніше він розміщувався в будівлі Троїцького собору. Пізніше музей перенесли в будівлю, яка була побудована
+            в 1901 році в стилі українського модерну.</p>
+        <a href="#" class="link">Показати на карті &xrarr;</a>
+    </div>
+    <img src="{% static 'website/images/museum.png' %}">
+</div>
+<div class="interesting-place left">
+    <img src="{% static 'website/images/park.png' %}">
+    <div class="center">
+        <p class="bigger-text">Парк імені О.М. Сучкова</p>
+        <p class="description smaller">Міський парк в Новомосковську був організований після Другої світової війни. Його
+            було названо в пам’ять про Олександра Сучкова (1900–1944). Полковник Сучков командував 195-ю стрілецькою
+            дивізією, яка брала участь у звільненні регіону від німецько-фашистських загарбників.</p>
+        <a href="#" class="link">Показати на карті &xrarr;</a>
+    </div>
+</div>
+<div class="interesting-place right">
+    <div class="center">
+        <p class="bigger-text">Набережна Міста</p>
+        <p class="description smaller">Це чудове місце для відпочинку та відкриття неймовірних видовищ на природу та
+            річку Самара. Розташована біля берега, вона запрошує мешканців та гостей міста на прогулянки вздовж водойми,
+            де можна насолодитися чарівними заходами сонця та відчути легку бризку вітру.</p>
+        <a href="#" class="link">Показати на карті &xrarr;</a>
+    </div>
+    <img src="{% static 'website/images/landscape.png' %}">
+</div>
+
+{% endblock content %}

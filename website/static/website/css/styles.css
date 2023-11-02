@@ -1,0 +1,290 @@
+* {
+    font-family: "Nunito Sans", sans-serif;
+}
+
+body {
+    background-color: #F5FAFF;
+    padding: 0%;
+    margin: 0%;
+}
+
+#content {
+    margin: 8em auto 0em auto;
+    overflow: auto;
+    width: 80%;
+}
+
+#nav {
+    width: 100%;
+    overflow: auto;
+    margin: 0em auto;
+    padding: 1.5em 0em;
+    position: fixed;
+    top: 0px;
+    background-color: #F5FAFF;
+    box-shadow: 0px 0px 10px;
+    z-index: 10;
+}
+
+#nav .nav-element {
+    width: 10%;
+    float: left;
+    text-align: center;
+    margin: 0% 5%;
+    color: #000000;
+    text-decoration: 0;
+    padding-bottom: 0.3em;
+}
+
+#nav .nav-element.visited {
+    border-bottom: 1px solid #000000;
+    margin-top: 1em;
+}
+
+#nav a.nav-element:hover {
+    color: #8F8F8F;
+}
+
+#nav .nav-element img {
+    width: 4em;
+    height: 4em;
+}
+
+#nav .nav-element.text {
+    margin-top: 1em;
+}
+
+#footer {
+    background-color: #000000;
+    color: #ffffff;
+    overflow: auto;
+    width: 100%;
+    margin: 10em 0em 0em 0em;
+    padding: 3em 0em 3em 0em;
+}
+
+#footer ul {
+    float: left;
+    margin: 0% 0% 0% 10%;
+    width: 15%;
+}
+
+#footer li {
+    margin: 1em;
+    list-style-type: none;
+}
+
+#footer .footer-link {
+    color: #ffffff;
+    text-decoration: none;
+    transition: all 0.1s;
+}
+
+#footer .footer-link:hover {
+    padding-left: 0.25em;
+    border-left: 0.15em solid #ffffff;
+}
+
+#footer p {
+    margin: 0% 0% 0% 50%;
+    line-height: 1.5em;
+    width: 26em;
+}
+
+#footer div.author {
+    color: #444;
+    margin-top: 1em;
+}
+
+.align-left {
+    float: left;
+}
+
+h1,
+h2,
+a.link,
+p.bigger-text,
+p.description,
+p.date {
+    text-align: center;
+    line-height: 140%;
+    font-style: normal;
+}
+
+h1 {
+    font-size: 350%;
+    font-weight: 600;
+}
+
+h2 {
+    font-size: 250%;
+    font-weight: 600;
+}
+
+h2#news {
+    margin-top: 3em;
+}
+
+p.bigger-text {
+    font-size: 150%;
+    font-weight: 700;
+}
+
+p.description {
+    font-size: 130%;
+    font-weight: 400;
+}
+
+p.description.smaller {
+    font-size: 120%;
+}
+
+p.date {
+    color: #8F8F8F;
+    font-size: 110%;
+}
+
+a.link {
+    text-decoration: none;
+    color: #000000;
+    font-size: 110%;
+    font-weight: 700;
+    transition: all 0.1s;
+}
+
+a.link:hover {
+    padding-left: 0.25em;
+    border-left: 0.15em solid #000000;
+}
+
+a.link#center {
+    position: relative;
+    left: 40%;
+}
+
+#gallery {
+    margin-bottom: 6em;
+}
+
+#gallery .row {
+    margin: 5em 0em;
+    width: 100%;
+    overflow: auto;
+    display: flex;
+}
+
+#gallery .row img {
+    border-radius: 8px;
+}
+
+#gallery .row img.first.center {
+    margin: auto auto auto 0%;
+}
+
+#gallery .row img.second.center {
+    margin: auto 0% auto auto;
+}
+
+
+.bio {
+    width: 75%;
+    margin: 6em auto;
+}
+
+.bio img.photo {
+    display: block;
+    margin: 0em auto;
+    border-radius: 8px;
+}
+
+
+.interesting-place {
+    width: 100%;
+    overflow: auto;
+    margin: 5em auto;
+    display: flex;
+}
+
+.interesting-place .bigger-text,
+.interesting-place .description.smaller {
+    text-align: left;
+}
+
+.interesting-place img {
+    border-radius: 8px;
+}
+
+.interesting-place .bigger-text {
+    width: 15em;
+}
+
+.interesting-place .center {
+    margin: auto 0%;
+}
+
+.interesting-place .description.smaller {
+    width: 20em;
+}
+
+
+.interesting-place.left img {
+    margin-right: 10em;
+}
+
+.interesting-place.right img {
+    margin-left: 10em;
+}
+
+.interesting-place.left img,
+.interesting-place.left a.link,
+.interesting-place.left .bigger-text,
+.interesting-place.left .description.smaller {
+    float: left
+}
+
+.interesting-place.right img {
+    float: right;
+}
+
+
+.news {
+    width: 100%;
+    overflow: auto;
+}
+
+
+.new {
+    float: left;
+    width: 45%;
+}
+
+.new#first {
+    margin-right: 10%;
+}
+
+.new img {
+    border-radius: 8px;
+    width: 100%;
+}
+
+.new p.bigger-text,
+.new p.date,
+.new p.description.smaller,
+.new a.link {
+    text-align: left;
+}
+
+img.center {
+    border-radius: 8px;
+    display: block;
+    margin: 0em auto;
+}
+
+img.more-side-margins-image {
+    margin-top: 3em;
+    margin-bottom: 3em;
+}
+
+p.left {
+    text-align: left;
+}
