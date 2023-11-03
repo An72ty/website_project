@@ -26,10 +26,12 @@
 
         {% for nav_element in nav_elements %}
         {% if nav_element.position == page_number %}
-        <span class="nav-element visited" id="i{{ nav_element.position }}">{{ nav_element.text }}</span>
+        <div class="nav-element text">
+            <span class="visited">{{ nav_element.text }}</span>
+        </div>
         {% endif %}
         {% if nav_element.position == -1 %}
-        <a href="{% url 'website:index' %}" class="nav-element">
+        <a href=" {% url 'website:index' %}" class="nav-element">
             <img src="{% static 'website/images/novomoskovsk.png' %}" alt="Новомосковськ">
         </a>
         {% endif %}

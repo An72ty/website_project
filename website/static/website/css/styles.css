@@ -36,45 +36,21 @@ body {
     padding-bottom: 0.3em;
 }
 
-#nav .nav-element.visited {
+#nav .visited {
     margin-top: 1em;
+    width: auto;
+    margin: 0em auto;
+    border-bottom: 1px solid #000000;
 }
 
-#nav .nav-element.visited#i0::after {
+/* #nav .visited::after {
     content: "";
     display: block;
-    width: 4em;
+    width: 100%;
     transform: translateX(2em);
     height: 1px;
     background-color: #000000;
-}
-
-#nav .nav-element.visited#i1::after {
-    content: "";
-    display: block;
-    width: 5.8em;
-    transform: translateX(1.15em);
-    height: 1px;
-    background-color: #000000;
-}
-
-#nav .nav-element.visited#i2::after {
-    content: "";
-    display: block;
-    width: 6em;
-    transform: translateX(1em);
-    height: 1px;
-    background-color: #000000;
-}
-
-#nav .nav-element.visited#i3::after {
-    content: "";
-    display: block;
-    width: 3.8em;
-    transform: translateX(2.2em);
-    height: 1px;
-    background-color: #000000;
-}
+} */
 
 #nav a.nav-element:hover {
     color: #8F8F8F;
